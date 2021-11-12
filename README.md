@@ -1,8 +1,6 @@
 # Next JS
 
 ## install
-yarn create-next-app nama-aplikasi
-or
 npx create-next-app nama-aplikasi
 
 ## Feature
@@ -10,30 +8,44 @@ https://nextjs.org/docs/basic-features/pages
 
 ## Create Pages
 - Page
-- Move Between Page
-- API
+- Move Between Page=
 
 ## Add Prisma
-yarn add -D prisma or npm install --save-dev prisma
-npx init prisma
+install --save-dev prisma
+npx prisma init
 
 ## Create Models
-- Table karyawan
+- Table Employee
+- Table Car
+
 ```
-model Karyawan {
-  id                  String                @id @default(cuid())
-  name                String
-  gender              Gender
-  email               String                @unique]=
-  address
+enum Gender {
+  L
+  P
+}
+
+model Employee {
+  id      String @id @default(cuid())
+  name    String
+  gender  Gender
+  email   String @unique
+  address String
+  Car     Car[]
 }
 
 model Car {
-  id                  String                @id @default(cuid())
-  type                String
-  brand               String
-  email               String                @unique]=
-  address
+  id         String   @id @default(cuid())
+  type       String
+  brand      String
+  year       Int
+  employeId  String
+  employeeId Employee @relation(fields: [employeId], references: [id])
 }
+
 ```
+
+## create API
+- API Employee
+- API Car
+
 
