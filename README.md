@@ -7,12 +7,13 @@ npx create-next-app nama-aplikasi
 https://nextjs.org/docs/basic-features/pages
 
 ## Create Pages
-- Page
-- Move Between Page=
+- Employee
+- 
+- Move Between Page
 
 ## Add Prisma
-install --save-dev prisma
-npx prisma init
+- npm install --save-dev prisma
+- npx prisma init
 
 ## Create Models
 - Table Employee
