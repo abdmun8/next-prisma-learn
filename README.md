@@ -45,6 +45,9 @@ model Car {
 
 ```
 
+## Push Schema to DB
+- npx prisma db push
+
 ## create API
 - API Employee
 - API Car
