@@ -8,7 +8,7 @@ https://nextjs.org/docs/basic-features/pages
 
 ## Create Pages
 - Employee
-- 
+- Car
 - Move Between Page
 
 ## Add Prisma
